@@ -15,5 +15,5 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push onojatreasure/udagram-api-feed:v1
   - docker push onojatreasure/udagram-api-user:v1
-  - docker push onojatreasure/reverseproxy:v1
+  - docker push onojatreasure/udagram-reverseproxy:v1
   - docker push onojatreasure/udagram-frontend:v1
